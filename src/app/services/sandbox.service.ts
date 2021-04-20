@@ -3,7 +3,7 @@ import { from, of, timer } from "rxjs";
 import { delay } from "rxjs/operators";
 import { peopleData } from "../data/data";
 
-@Injectable()
+@Injectable({ providedIn: "root" })
 export class SandboxService {
   public secondTimer$ = timer(0, 1000); // emit immediately (0), then every second (1000)
   public oneValue$ = of("hello");
