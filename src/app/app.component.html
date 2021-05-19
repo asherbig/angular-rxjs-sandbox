@@ -2,3 +2,11 @@
 <p>
   Play with some observables!
 </p>
+
+<h3>Timer A: {{ timerA$ | async }}</h3>
+<h3>Timer B: {{ timerB$ | async }}</h3>
+<h3>Combine-Latest: {{ combineLatest$ | async }}</h3>
+<h3>Zip: {{ zip$ | async }}</h3>
+
+<button (click)="onGetDataPress()">Get Data</button>
+<button (click)="getPeoplePressed()">Get People</button>
